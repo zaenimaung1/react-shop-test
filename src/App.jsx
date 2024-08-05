@@ -11,7 +11,7 @@ export default function App(){
         <p className="text-2xl text-gray-500 mb-3">{title}</p>
         <div>
           {Categories.map((catagory) => (
-            <button className="border border-gray-800 me-3 px-3 py-4">{catagory}</button>
+            <button className="border border-gray-800 me-3 px-3 py-4 rounded">{catagory}</button>
           )            
           )}
         </div>
