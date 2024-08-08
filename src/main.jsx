@@ -2,6 +2,10 @@ import { createElement } from "react";
 import "./index.css";
 import { createRoot } from "react-dom/client";
 import App from "./App";
+import { RouterProvider } from "react-router";
+import router from "./routes/router";
+
+
 
 
 // const Categories =[
@@ -13,6 +17,8 @@ import App from "./App";
 
 
 const root = document.querySelector("#root");
+
+
 //view - react node
 // const app =createElement("div",{id:"category-section",className:"p-5"},
 // createElement("p",null,"Product Categories"),
@@ -22,9 +28,7 @@ const root = document.querySelector("#root");
 // );
 
 //render
-createRoot(root).render(App());
-
-
+createRoot(root).render(<RouterProvider router={router}/>)
 
 
 // const title = document.createElement("p");

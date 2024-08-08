@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.btn-group {
+   
+    -ms-overflow-style: none; /* Internet Explorer and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  
+  .btn-group::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+  }
