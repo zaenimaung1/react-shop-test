@@ -13,7 +13,7 @@ function Product_detail() {
   return (
     <Container>
       <Breakcumb currentPageTitle={"Product-detail"}/>
-      <div className=" border border-black p-20 ">
+      <div className=" border border-black p-10 ">
         <div className="grid grid-cols-2">
           <div className="col-span-1">
             <img
@@ -22,7 +22,7 @@ function Product_detail() {
               className="w-3/4 block mx-auto"
             />
           </div>
-          <div className="flex flex-col gap-5">
+          <div className="flex flex-col gap-5 col-span-1">
             <h3 className="text-3xl font-bold">{currentProduct.title}</h3>
             <p className="bg-gray-500 text-gray-200 inline-block px-5 py-1">
               {currentProduct.category}

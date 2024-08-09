@@ -1,8 +1,15 @@
 import React from 'react'
+import Container from '../component/Container'
+import Breakcumb from '../component/Breakcumb'
+import CartSection from '../component/CartSection'
 
-function Mycart() {
+
+const Mycart = () => {
   return (
-    <div>Mycart</div>
+    <Container className="flex-grow">
+    <Breakcumb currentPageTitle="My Cart" />
+    <CartSection />
+  </Container>
   )
 }
 
